@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "in+B+2fb9f2fWGNruLH5756zItbmBsxtx27tbYQGzBs=",
+  "Hash": "krJWBxmQMFUvFonDUlp+rvHgI6NuKN7729u+aRhM268=",
   "Source": "LiveWeather",
   "BasePath": "_content/LiveWeather",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "LiveWeather\\wwwroot",
       "Source": "LiveWeather",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\WISE WORK\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LiveWeather.styles.css",
+      "Identity": "D:\\wisework(off)\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LiveWeather.styles.css",
       "SourceId": "LiveWeather",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "LiveWeather.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\WISE WORK\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LiveWeather.styles.css"
+      "OriginalItemSpec": "D:\\wisework(off)\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LiveWeather.styles.css"
     },
     {
-      "Identity": "D:\\WISE WORK\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LiveWeather.bundle.scp.css",
+      "Identity": "D:\\wisework(off)\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LiveWeather.bundle.scp.css",
       "SourceId": "LiveWeather",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "LiveWeather.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\WISE WORK\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LiveWeather.bundle.scp.css"
+      "OriginalItemSpec": "D:\\wisework(off)\\LiveWeather\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LiveWeather.bundle.scp.css"
     },
     {
-      "Identity": "D:\\WISE WORK\\LiveWeather\\wwwroot\\app.css",
+      "Identity": "D:\\wisework(off)\\LiveWeather\\wwwroot\\app.css",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "D:\\WISE WORK\\LiveWeather\\wwwroot\\background.jpg",
+      "Identity": "D:\\wisework(off)\\LiveWeather\\wwwroot\\background.jpg",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "background.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\background.jpg"
     },
     {
-      "Identity": "D:\\WISE WORK\\LiveWeather\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\wisework(off)\\LiveWeather\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\WISE WORK\\LiveWeather\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\wisework(off)\\LiveWeather\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\WISE WORK\\LiveWeather\\wwwroot\\favicon.ico",
+      "Identity": "D:\\wisework(off)\\LiveWeather\\wwwroot\\favicon.ico",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\WISE WORK\\LiveWeather\\wwwroot\\favicon.png",
+      "Identity": "D:\\wisework(off)\\LiveWeather\\wwwroot\\favicon.png",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "D:\\WISE WORK\\LiveWeather\\wwwroot\\index.html",
+      "Identity": "D:\\wisework(off)\\LiveWeather\\wwwroot\\index.html",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WISE WORK\\LiveWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\LiveWeather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "index.html",
       "AssetKind": "All",

@@ -1,41 +1,114 @@
 ﻿@page "/"
 @rendermode InteractiveServer
 @inject WeatherService WeatherService
-  
+
+<style>
+    /* Full height for centering */
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    /* Container settings for centering search bar only */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* Card layout */
+    .weather-card {
+        max-width: 600px;
+        background-color: #E5F6FB;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        color: #333;
+        text-align: center;
+    }
+
+    /* Styling for the search bar */
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .search-bar input {
+        width: 60%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .search-bar button {
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    /* Weather info styling */
+    .temperature {
+        font-size: 48px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+    .icon img {
+        width: 80px;
+        height: auto;
+    }
+</style>
+
 <PageTitle>LiveWeather</PageTitle>
+
 <div class="container">
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-             <div class="card">
-                <div class="card-body">
-                     <h3 class="card-title">LiveWeather</h3>
-                     <div class="input-group mb-3">
-                        <input @bind ="city" class="form-control">
-                        <button @onclick="GetWeather" class="btn btn-primary">Search</button>
-                    </div>
-                    @if(weatherResponse != null){
-                    <div>
-                        <h4> @weatherResponse.Location.Name</h4>
-                       <p> Temperature: @weatherResponse.Current.Temp_C</p>
-                       <p>Condition: @weatherResponse.Current.Condition.Text</p>
-                        <p>Wind: @weatherResponse.Current.Wind_Kph km/h (@weatherResponse.Current.Wind_Mph mph) from @weatherResponse.Current.Wind_Dir</p>
-                        <p>Humidity: @weatherResponse.Current.Humidity%</p>
-                           <img src="@("https:" + weatherResponse.Current.Condition.Icon)" alt="" />
-                 
+    <div class="weather-card">
+        <div class="search-bar">
+            <input @bind="city" @onkeypress="HandleKeyPress" class="form-control" placeholder="Enter City" />
+            <button @onclick="GetWeather" class="btn btn-primary">Search</button>
+        </div>
 
-                  </div>
-                    } 
-
-                  </div>
-             </div>
-    </div>
+        @if (weatherResponse != null)
+        {
+            <div class="current-weather">
+                <h2>@weatherResponse.Location.Name</h2>
+                <div class="temperature">@weatherResponse.Current.Temp_C°C</div>
+                <p>Condition: @weatherResponse.Current.Condition.Text</p>
+                <p>Wind: @weatherResponse.Current.Wind_Kph km/h (@weatherResponse.Current.Wind_Mph mph) from @weatherResponse.Current.Wind_Dir</p>
+                <p>Humidity: @weatherResponse.Current.Humidity%</p>
+                <div class="icon">
+                    <img src="@("https:" + weatherResponse.Current.Condition.Icon)" alt="Weather Icon" />
+                </div>
+            </div>
+        }
     </div>
 </div>
-@code{
 
-private string city = "";
-private WeatherResponse? weatherResponse;
-async Task GetWeather(){
-     weatherResponse = await WeatherService.GetWeatherAsync(city);
+@code {
+    private string city = "";
+    private WeatherResponse? weatherResponse;
+
+    async Task GetWeather()
+    {
+        if (!string.IsNullOrWhiteSpace(city))
+        {
+            weatherResponse = await WeatherService.GetWeatherAsync(city);
+        }
+    }
+
+    private void HandleKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            GetWeather(); // Trigger the weather search when Enter is pressed
+        }
+    }
 }
-} 
