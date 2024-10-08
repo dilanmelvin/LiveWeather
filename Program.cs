@@ -2,7 +2,6 @@ using LiveWeather.Models;
 using LiveWeather.Components;
 using LiveWeather.Services;
 using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,9 +34,6 @@ app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
 // Set up routing for the welcome page
-app.MapGet("/", (NavigationManager navigationManager) =>
-{
-    navigationManager.NavigateTo("/welcome");
-});
+app.MapGet("/", () => Results.Redirect("/welcome"));
 
 app.Run();

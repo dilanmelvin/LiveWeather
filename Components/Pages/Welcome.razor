@@ -1,14 +1,10 @@
 @page "/welcome"
-@inject NavigationManager NavigationManager
 
-<h3>Welcome to the Weather App!</h3>
-<p>This application provides live weather updates.</p>
+<h3 class="centered-text">Welcome to the Live Weather App</h3>
 
-<button class="btn btn-primary" @onclick="NavigateToWeather">Weather</button>
-
-@code {
-    private void NavigateToWeather()
-    {
-        NavigationManager.NavigateTo("/home"); // Ensure the URL is prefixed with '/'
+<style>
+    .centered-text {
+        text-align: center;
+        font-weight: bold;
     }
-}
+</style>

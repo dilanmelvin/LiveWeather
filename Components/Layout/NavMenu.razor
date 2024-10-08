@@ -1,6 +1,8 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@page "/navmenu"
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">LiveWeather</a>
+        <a class="navbar-brand" href="" style="color: black; font-weight: bold;">LiveWeather</a>
     </div>
 </div>
 
@@ -9,12 +11,14 @@
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="flex-column">
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="/welcome" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> HOME
+            <NavLink class="nav-link btn-premium" href="/welcome" Match="NavLinkMatch.All">
+                <i class="bi bi-house-door-fill icon"></i> <span class="nav-text"><strong>HOME</strong></span>
             </NavLink>
-            <NavLink class="nav-link" href="/home" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> CHECK WEATHER
+            <NavLink class="nav-link btn-premium" href="/Check" Match="NavLinkMatch.All">
+                <i class="bi bi-cloud-sun-fill icon"></i> <span class="nav-text"><strong>CHECK WEATHER</strong></span>
             </NavLink>
         </div>
     </nav>
 </div>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
