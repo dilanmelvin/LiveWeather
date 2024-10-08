@@ -15,11 +15,13 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        width: 100%; /* Full width */
+        padding: 0 20px; /* Optional padding */
     }
 
     /* Card layout */
     .weather-card {
-        max-width: 600px;
+        width: 100%; /* Full width */
         background-color: #E5F6FB;
         border-radius: 12px;
         padding: 20px;
@@ -34,14 +36,16 @@
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+        width: 100%; /* Full width */
     }
 
     .search-bar input {
-        width: 60%;
+        flex: 1; /* Fill the available space */
         padding: 10px;
         border: none;
         border-radius: 5px;
         font-size: 16px;
+        margin-right: 10px; /* Space between input and button */
     }
 
     .search-bar button {
@@ -51,7 +55,6 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        margin-left: 10px;
     }
 
     /* Weather info styling */
