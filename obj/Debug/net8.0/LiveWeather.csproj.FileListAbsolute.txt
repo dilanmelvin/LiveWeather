@@ -33,9 +33,9 @@ D:\WISE WORK\LiveWeather\obj\Debug\net8.0\refint\LiveWeather.dll
 D:\WISE WORK\LiveWeather\obj\Debug\net8.0\LiveWeather.pdb
 D:\WISE WORK\LiveWeather\obj\Debug\net8.0\LiveWeather.genruntimeconfig.cache
 D:\WISE WORK\LiveWeather\obj\Debug\net8.0\ref\LiveWeather.dll
+D:\wisework(off)\LiveWeather\bin\Debug\net8.0\output\web.config
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\appsettings.Development.json
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\appsettings.json
-D:\wisework(off)\LiveWeather\bin\Debug\net8.0\output\web.config
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\output\appsettings.Development.json
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\output\appsettings.json
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\output\LiveWeather.json
