@@ -1,9 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\WISE WORK\\New folder\\liveweather\\",
+  "WorkspaceRootPath": "D:\\wisework(off)\\LiveWeather\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wise work\\new folder\\liveweather\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dilan\\AppData\\Local\\SourceServer\\8898782fb46b475bf3efecab9d8aa7e63815f5a94fbba4bc68e3b781963ac46f\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\liveweather\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\liveweather\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -19,10 +26,34 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dilan\\AppData\\Local\\SourceServer\\8898782fb46b475bf3efecab9d8aa7e63815f5a94fbba4bc68e3b781963ac46f\\Program.cs",
+              "ToolTip": "C:\\Users\\dilan\\AppData\\Local\\SourceServer\\8898782fb46b475bf3efecab9d8aa7e63815f5a94fbba4bc68e3b781963ac46f\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T12:04:49.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\wisework(off)\\LiveWeather\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\wisework(off)\\LiveWeather\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAkwCoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T12:04:03.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Home.razor",
-              "DocumentMoniker": "D:\\WISE WORK\\New folder\\liveweather\\Components\\Pages\\Home.razor",
+              "DocumentMoniker": "D:\\wisework(off)\\LiveWeather\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
-              "ToolTip": "D:\\WISE WORK\\New folder\\liveweather\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\wisework(off)\\LiveWeather\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "Components\\Pages\\Home.razor",
               "ViewState": "AgIAAFoAAAAAAAAAAAAwwHEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
