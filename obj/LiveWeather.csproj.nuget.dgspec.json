@@ -53,11 +53,6 @@
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[6.0.0, )"
-            },
-            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.0, )"
             }
           },
           "imports": [

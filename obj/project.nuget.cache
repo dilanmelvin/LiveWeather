@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "aAQ50bPPQnM=",
-  "success": false,
+  "dgSpecHash": "27cMrk83OnA=",
+  "success": true,
   "projectFilePath": "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dilan\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",
@@ -33,15 +33,5 @@
     "C:\\Users\\dilan\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\dilan\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1102",
-      "level": "Error",
-      "message": "Unable to find package Microsoft.AspNetCore.Components.WebAssembly.Build with version (>= 6.0.0)\r\n  - Found 9 version(s) in nuget.org [ Nearest version: 5.0.0-preview.6.20312.15 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs",
-      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly.Build",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

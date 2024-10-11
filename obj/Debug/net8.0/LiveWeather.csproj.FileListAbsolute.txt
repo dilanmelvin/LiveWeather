@@ -68,12 +68,6 @@ D:\WISE WORK\New folder\liveweather\obj\Debug\net8.0\refint\LiveWeather.dll
 D:\WISE WORK\New folder\liveweather\obj\Debug\net8.0\LiveWeather.pdb
 D:\WISE WORK\New folder\liveweather\obj\Debug\net8.0\LiveWeather.genruntimeconfig.cache
 D:\WISE WORK\New folder\liveweather\obj\Debug\net8.0\ref\LiveWeather.dll
-D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.GeneratedMSBuildEditorConfig.editorconfig
-D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.AssemblyInfoInputs.cache
-D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.AssemblyInfo.cs
-D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.csproj.CoreCompileInputs.cache
-D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.MvcApplicationPartsAssemblyInfo.cache
-D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.sourcelink.json
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\output\web.config
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\appsettings.Development.json
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\appsettings.json
@@ -87,6 +81,15 @@ D:\wisework(off)\LiveWeather\bin\Debug\net8.0\LiveWeather.deps.json
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\LiveWeather.runtimeconfig.json
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\LiveWeather.dll
 D:\wisework(off)\LiveWeather\bin\Debug\net8.0\LiveWeather.pdb
+D:\wisework(off)\LiveWeather\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+D:\wisework(off)\LiveWeather\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.csproj.AssemblyReference.cache
+D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.GeneratedMSBuildEditorConfig.editorconfig
+D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.AssemblyInfoInputs.cache
+D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.AssemblyInfo.cs
+D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.csproj.CoreCompileInputs.cache
+D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.MvcApplicationPartsAssemblyInfo.cache
+D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.sourcelink.json
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\staticwebassets.build.json
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\staticwebassets.development.json
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\staticwebassets\msbuild.LiveWeather.Microsoft.AspNetCore.StaticWebAssets.props
@@ -98,6 +101,7 @@ D:\wisework(off)\LiveWeather\obj\Debug\net8.0\scopedcss\Components\Layout\MainLa
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\scopedcss\bundle\LiveWeather.styles.css
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\scopedcss\projectbundle\LiveWeather.bundle.scp.css
+D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeat.9F3D4B88.Up2Date
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.dll
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\refint\LiveWeather.dll
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.pdb
