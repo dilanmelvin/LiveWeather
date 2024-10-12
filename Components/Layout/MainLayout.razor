@@ -21,3 +21,55 @@
     <a href="" class="reload">Reload</a>
     <a class="dismiss">🗙</a>
 </div>
+
+<!-- Centered content for the search input -->
+<div class="center-content">
+    <label for="city">ENTER CITY:</label>
+    <input type="text" id="city" name="city">
+    <button type="submit">Search</button>
+</div>
+
+<style>
+    .top-row {
+        position: relative; /* Keep it relative to normal flow */
+    }
+
+    .hub-button {
+        font-size: 18px; /* Increase font size */
+        font-weight: bold; /* Make the text bold */
+        color: white; /* Change text color to white */
+        background-color: #007BFF; /* Blue background for visibility */
+        padding: 10px 20px; /* Add padding for better size */
+        border-radius: 5px; /* Round corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s; /* Smooth transition on hover */
+    }
+
+    .hub-button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        height: calc(100vh - 100px); /* Adjust height for centering */
+    }
+
+    .center-content label {
+        margin-bottom: 10px; /* Space between label and input */
+    }
+
+    .center-content input {
+        margin-right: 10px; /* Space between input and button */
+        padding: 10px; /* Add padding to input */
+        font-size: 16px; /* Increase font size */
+    }
+
+    .center-content button {
+        padding: 10px; /* Add padding to button */
+        font-size: 16px; /* Increase font size */
+        cursor: pointer; /* Change cursor on hover */
+    }
+</style>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "27cMrk83OnA=",
+  "dgSpecHash": "xfjjISXOrhE=",
   "success": true,
-  "projectFilePath": "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj",
+  "projectFilePath": "D:\\WISE WORK\\liveweather\\LiveWeather.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dilan\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",
     "C:\\Users\\dilan\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.0\\microsoft.aspnetcore.components.6.0.0.nupkg.sha512",

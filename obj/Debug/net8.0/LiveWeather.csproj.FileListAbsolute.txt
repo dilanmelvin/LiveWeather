@@ -107,3 +107,7 @@ D:\wisework(off)\LiveWeather\obj\Debug\net8.0\refint\LiveWeather.dll
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.pdb
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\LiveWeather.genruntimeconfig.cache
 D:\wisework(off)\LiveWeather\obj\Debug\net8.0\ref\LiveWeather.dll
+D:\WISE WORK\liveweather\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+D:\WISE WORK\liveweather\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+D:\WISE WORK\liveweather\obj\Debug\net8.0\LiveWeather.csproj.AssemblyReference.cache
+D:\WISE WORK\liveweather\obj\Debug\net8.0\LiveWeat.9F3D4B88.Up2Date

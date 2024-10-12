@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj": {}
+    "D:\\WISE WORK\\liveweather\\LiveWeather.csproj": {}
   },
   "projects": {
-    "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj": {
+    "D:\\WISE WORK\\liveweather\\LiveWeather.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj",
+        "projectUniqueName": "D:\\WISE WORK\\liveweather\\LiveWeather.csproj",
         "projectName": "LiveWeather",
-        "projectPath": "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj",
+        "projectPath": "D:\\WISE WORK\\liveweather\\LiveWeather.csproj",
         "packagesPath": "C:\\Users\\dilan\\.nuget\\packages\\",
-        "outputPath": "D:\\wisework(off)\\LiveWeather\\obj\\",
+        "outputPath": "D:\\WISE WORK\\liveweather\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

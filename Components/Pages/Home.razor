@@ -3,25 +3,22 @@
 @inject WeatherService WeatherService
 
 <style>
-    /* Full height for centering */
     body, html {
         height: 100%;
         margin: 0;
     }
 
-    /* Container settings for centering search bar only */
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-        width: 100%; /* Full width */
-        padding: 0 20px; /* Optional padding */
+        width: 100%;
+        padding: 0 20px;
     }
 
-    /* Card layout */
     .weather-card {
-        width: 100%; /* Full width */
+        width: 100%;
         background-color: #E5F6FB;
         border-radius: 12px;
         padding: 20px;
@@ -31,21 +28,20 @@
         text-align: center;
     }
 
-    /* Styling for the search bar */
     .search-bar {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
-        width: 100%; /* Full width */
+        width: 100%;
     }
 
     .search-bar input {
-        flex: 1; /* Fill the available space */
+        flex: 1;
         padding: 10px;
         border: none;
         border-radius: 5px;
         font-size: 16px;
-        margin-right: 10px; /* Space between input and button */
+        margin-right: 10px;
     }
 
     .search-bar button {
@@ -57,7 +53,6 @@
         cursor: pointer;
     }
 
-    /* Weather info styling */
     .temperature {
         font-size: 48px;
         font-weight: bold;
@@ -67,6 +62,20 @@
     .icon img {
         width: 80px;
         height: auto;
+    }
+
+    .forecast {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .forecast-day {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+
+    .forecast-day:last-child {
+        border-bottom: none;
     }
 </style>
 
@@ -91,6 +100,16 @@
                     <img src="@("https:" + weatherResponse.Current.Condition.Icon)" alt="Weather Icon" />
                 </div>
             </div>
+
+            <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                @foreach (var day in weatherResponse.Forecast.Forecastday)
+                {
+                    <div class="forecast-day">
+                        <p>@day.Date: Max Temp: @day.Day.Maxtemp_C°C, Min Temp: @day.Day.Mintemp_C°C, Condition: @day.Day.Condition.Text</p>
+                    </div>
+                }
+            </div>
         }
     </div>
 </div>
@@ -103,15 +122,15 @@
     {
         if (!string.IsNullOrWhiteSpace(city))
         {
-            weatherResponse = await WeatherService.GetWeatherAsync(city);
+            weatherResponse = await WeatherService.Get5DayForecastAsync(city);
         }
     }
 
-    private async Task HandleKeyPress(KeyboardEventArgs e) // Ensure this is async
+    private void HandleKeyPress(KeyboardEventArgs e)
     {
         if (e.Key == "Enter")
         {
-            await GetWeather(); // Await the call to GetWeather
+            GetWeather();
         }
     }
 }
