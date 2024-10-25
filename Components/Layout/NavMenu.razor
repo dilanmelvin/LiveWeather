@@ -8,23 +8,21 @@
 </div>
 
 @code {
-    private List<BreadcrumbItem> _items = new List<BreadcrumbItem>
-    {
-        new BreadcrumbItem("Home", href: "/welcome", icon: Icons.Material.Filled.Home),
-        new BreadcrumbItem("Check Weather", href: "/check", icon: Icons.Material.Filled.Cloud),
-        new BreadcrumbItem("Login", href: "/signup", icon: Icons.Material.Filled.SupervisedUserCircle),
-        new BreadcrumbItem("Source", href: "https://github.com/dilanmelvin/liveweather/", icon: Icons.Material.Filled.Source),
-    };
+    private List<BreadcrumbItem> _items;
 
     protected override void OnInitialized()
     {
         userState.OnChange += StateHasChanged; // Subscribe to changes
 
-        // Add Favourites to breadcrumbs if the user is logged in
-        if (userState.IsLoggedIn())
+        // Initialize the breadcrumb items
+        _items = new List<BreadcrumbItem>
         {
-            _items.Add(new BreadcrumbItem("Favourites", href: "/favourites", icon: Icons.Material.Filled.Favorite));
-        }
+            new BreadcrumbItem("Home", href: "/welcome", icon: Icons.Material.Filled.Home),
+            new BreadcrumbItem("Check Weather", href: "/check", icon: Icons.Material.Filled.Cloud),
+            new BreadcrumbItem("Favourites", href: userState.IsLoggedIn() ? "/favourites" : null,
+                              disabled: !userState.IsLoggedIn(),
+                              icon: Icons.Material.Filled.Favorite)
+        };
     }
 
     public void Dispose()
@@ -39,4 +37,14 @@
         justify-content: center; /* Center horizontally */
         margin: 20px 0; /* Optional: Add some vertical spacing */
     }
+
+    /* Set breadcrumb text color to white */
+    .mud-breadcrumbs {
+        color: white; /* Change breadcrumb text color */
+    }
+
+        /* Optional: Change icon color to white as well */
+        .mud-breadcrumbs .mud-icon {
+            color: white;
+        }
 </style>

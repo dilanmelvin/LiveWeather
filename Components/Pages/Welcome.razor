@@ -1,24 +1,48 @@
 @page "/welcome"
 @using MudBlazor
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@rendermode InteractiveServer
 
 <MudContainer MaxWidth="MaxWidth.Large" Class="my-5">
     <MudPaper Elevation="4" Class="p-4 text-center">
         <MudText Typo="Typo.h3" GutterBottom>
             Welcome to LiveWeather
         </MudText>
-        <MudText Typo="Typo.body1" Color="Color.Info" Class="mb-4">
-            Your one-stop solution for accurate and real-time weather updates.
-        </MudText>
-
-       
 
         <MudDivider Class="my-4" />
 
-        <MudButton Href="/check" Color="Color.Primary" Variant="Variant.Filled" Size="Size.Large" Class="mx-2">
-            Check Weather
-        </MudButton>
-        <MudButton Href="/signup" Color="Color.Secondary" Variant="Variant.Outlined" Size="Size.Large" Class="mx-2">
-            Sign Up
-        </MudButton>
+        @if (!isAuthenticated)
+        {
+            <MudButton OnClick="NavigateToSignUp" Color="Color.Secondary" Variant="Variant.Outlined" Size="Size.Large" Class="mx-2" StartIcon="@Icons.Material.Filled.PersonAdd">
+                Sign Up
+            </MudButton>
+
+            <MudButton OnClick="NavigateToLogin" Color="Color.Tertiary" Variant="Variant.Outlined" Size="Size.Large" Class="mx-2" StartIcon="@Icons.Material.Filled.Login">
+                Login
+            </MudButton>
+        }
     </MudPaper>
 </MudContainer>
+
+@code {
+    private bool isAuthenticated;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        isAuthenticated = authState.User.Identity != null && authState.User.Identity.IsAuthenticated;
+    }
+
+    private void NavigateToSignUp()
+    {
+        // Correct navigation method
+        NavigationManager.NavigateTo("/signup");
+    }
+
+    private void NavigateToLogin()
+    {
+        // Correct navigation method
+        NavigationManager.NavigateTo("/login");
+    }
+}

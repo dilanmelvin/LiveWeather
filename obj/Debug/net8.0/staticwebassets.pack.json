@@ -1,31 +1,31 @@
 {
   "Files": [
     {
-      "Id": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\app.css",
+      "Id": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\background.jpg",
+      "Id": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\background.jpg",
       "PackagePath": "staticwebassets\\background.jpg"
     },
     {
-      "Id": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\favicon.ico",
+      "Id": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\favicon.png",
+      "Id": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\index.html",
+      "Id": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

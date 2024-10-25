@@ -1,25 +1,53 @@
 @inherits LayoutComponentBase
-@* Required *@
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@using Microsoft.AspNetCore.Components.Authorization
+@using LiveWeather.Singletons
+@inject UserStateManager User
+
+
 <MudThemeProvider />
 <MudPopoverProvider />
-
-@* Needed for dialogs *@
 <MudDialogProvider />
-
-@* Needed for snackbars *@
 <MudSnackbarProvider />
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+<MudLayout>
+    <MudAppBar Color="Color.Primary" Fixed="false">
+        <!-- Remove the three-line menu icon and add the project name button to the top-left corner -->
+        <MudButton Class="mud-button-text" Style="text-transform:none; color:#FFFFFF; font-size: 24px;" Edge="Edge.Start" OnClick="@NavigateToHome">
+            LiveWeather
+        </MudButton>
 
-    <main>
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+        <MudSpacer />
+
+        <!-- Centered Navigation Menu -->
+        @if (User.IsLoggedIn())
+        {
+            <MudGrid Justify="Justify.Center">
+                <MudItem>
+                    <NavMenu />
+                </MudItem>
+            </MudGrid>
+        }
+
+        <MudSpacer />
+
+        <!-- GitHub IconButton -->
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Href="https://github.com/dilanmelvin/LiveWeather.git" Target="_blank" />
+    </MudAppBar>
+
+    <MudDrawer @bind-Open="@drawerOpen" Elevation="1" Color="Color.Primary" @onopen="@OnDrawerOpen" @onclose="@OnDrawerClose">
+        @if (isAuthenticated)
+        {
+            <NavMenu />
+        }
+    </MudDrawer>
+
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.
@@ -27,15 +55,49 @@
     <a href="" class="dismiss">🗙</a>
 </div>
 
-<style>
-    .top-row {
-        position: relative; /* Allow absolute positioning inside */
+@code {
+    private bool drawerOpen = false;
+    private bool isAuthenticated;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        isAuthenticated = authState.User.Identity != null && authState.User.Identity.IsAuthenticated;
     }
 
-    .top-right-corner {
-        position: absolute; /* Position buttons in the top right corner */
-        top: 0; /* Align to the top */
-        right: 0; /* Align to the right */
-        gap: 10px; /* Space between buttons */
+    private void ToggleDrawer()
+    {
+        drawerOpen = !drawerOpen; // Toggle the drawer open state
     }
-</style>
+
+    private void OnDrawerOpen()
+    {
+        // Additional logic can be added here if needed when the drawer opens
+    }
+
+    private void OnDrawerClose()
+    {
+        // Additional logic can be added here if needed when the drawer closes
+    }
+
+    private void NavigateToLogin()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+
+    private void NavigateToSignUp()
+    {
+        NavigationManager.NavigateTo("/signup");
+    }
+
+    private void Logout()
+    {
+        NavigationManager.NavigateTo("/logout");
+    }
+
+    // New method to navigate to Home (Check Weather page)
+    private void NavigateToHome()
+    {
+        NavigationManager.NavigateTo("/welcome");
+    }
+}

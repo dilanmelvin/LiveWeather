@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ON0XWJw7XtLvxbrLkxlCtdv/LCKr9m/pOzeL7Dglcx8=",
+  "Hash": "je7FQ0LXnRsrxsHZ48UkbvMJw0PEWHVpchJVufaIsjY=",
   "Source": "LiveWeather",
   "BasePath": "_content/LiveWeather",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "LiveWeather\\wwwroot",
       "Source": "LiveWeather",
-      "ContentRoot": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "Pattern": "**"
     }
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "C:\\Users\\dilan\\.nuget\\packages\\mudblazor\\7.13.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\app.css",
+      "Identity": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\app.css",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\background.jpg",
+      "Identity": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\background.jpg",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "background.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\background.jpg"
     },
     {
-      "Identity": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\favicon.ico",
+      "Identity": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\favicon.ico",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\favicon.png",
+      "Identity": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\favicon.png",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\index.html",
+      "Identity": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\index.html",
       "SourceId": "LiveWeather",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\wisework(off)\\New folder\\OpenWeather\\wwwroot\\",
+      "ContentRoot": "D:\\wisework(off)\\New folder\\liveweather\\wwwroot\\",
       "BasePath": "_content/LiveWeather",
       "RelativePath": "index.html",
       "AssetKind": "All",

@@ -1,18 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\wisework(off)\\New folder\\OpenWeather\\",
+  "WorkspaceRootPath": "D:\\wisework(off)\\New folder\\liveweather\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\openweather\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\openweather\\components\\pages\\welcome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\components\\pages\\welcome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:components\\pages\\welcome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\openweather\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\components\\pages\\signup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:components\\pages\\signup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\services\\customauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:services\\customauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|d:\\wisework(off)\\new folder\\liveweather\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3419538-4D43-46DE-B69C-7716B1B0DE11}|LiveWeather.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +50,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "D:\\wisework(off)\\New folder\\OpenWeather\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
-              "ToolTip": "D:\\wisework(off)\\New folder\\OpenWeather\\Components\\Layout\\NavMenu.razor*",
-              "RelativeToolTip": "Components\\Layout\\NavMenu.razor*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABKAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Signup.razor",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Pages\\Signup.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Signup.razor",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Pages\\Signup.razor",
+              "RelativeToolTip": "Components\\Pages\\Signup.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T06:11:37.225Z",
+              "WhenOpened": "2024-10-24T07:09:56.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Components\\App.razor",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Components\\App.razor",
+              "RelativeToolTip": "Components\\App.razor",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T07:06:07.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.razor",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Login.razor",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Pages\\Login.razor",
+              "RelativeToolTip": "Components\\Pages\\Login.razor",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T06:50:44.627Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T06:40:25.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomAuthenticationStateProvider.cs",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Services\\CustomAuthenticationStateProvider.cs",
+              "RelativeDocumentMoniker": "Services\\CustomAuthenticationStateProvider.cs",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Services\\CustomAuthenticationStateProvider.cs",
+              "RelativeToolTip": "Services\\CustomAuthenticationStateProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T06:40:14.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T06:38:01.986Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Home.razor",
-              "DocumentMoniker": "D:\\wisework(off)\\New folder\\OpenWeather\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
-              "ToolTip": "D:\\wisework(off)\\New folder\\OpenWeather\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAUAAAAAAAAAA==",
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAADEAAAAAAAAAAAAswGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T06:10:18.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T06:34:15.097Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Welcome.razor",
-              "DocumentMoniker": "D:\\wisework(off)\\New folder\\OpenWeather\\Components\\Pages\\Welcome.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Welcome.razor",
-              "ToolTip": "D:\\wisework(off)\\New folder\\OpenWeather\\Components\\Pages\\Welcome.razor",
-              "RelativeToolTip": "Components\\Pages\\Welcome.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T06:08:00.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T06:11:37.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T06:10:18.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Welcome.razor",
+              "DocumentMoniker": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Pages\\Welcome.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Welcome.razor",
+              "ToolTip": "D:\\wisework(off)\\New folder\\liveweather\\Components\\Pages\\Welcome.razor",
+              "RelativeToolTip": "Components\\Pages\\Welcome.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T06:08:00.646Z"
             }
           ]
         }

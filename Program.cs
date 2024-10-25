@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using LiveWeather.DatabaseController;
 using LiveWeather.Singletons;
 using MudBlazor.Services;
+using Microsoft.AspNetCore.Components.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,10 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddScoped<DatabaseController>();
 builder.Services.AddMudServices();
+builder.Services.AddOptions();
+builder.Services.AddAuthorizationCore();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+
 
 builder.Services.Configure<WeatherApiOptions>(builder.Configuration.GetSection("WeatherApi"));
 builder.Services.AddHttpClient<WeatherService>((sp, client) =>
