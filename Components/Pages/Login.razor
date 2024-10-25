@@ -19,49 +19,85 @@
             Type="email" 
             Required="true" />
 
-        <MudTextField 
-            Label="Password" 
-            @bind-Value="password" 
-            Placeholder="Enter password" 
-            Type="password" 
-            Required="true" />
+        <div class="d-flex align-items-center mt-2">
+            <MudTextField 
+                @bind-Value="password" 
+                Label="Password" 
+                Variant="Variant.Text" 
+                InputType="@PasswordInputType" 
+                Adornment="Adornment.End" 
+                AdornmentIcon="@PasswordIcon" 
+                OnAdornmentClick="TogglePasswordVisibility" 
+                AdornmentAriaLabel="Show Password" 
+                Placeholder="Enter password"
+                Required="true" 
+                FullWidth="true" />
+        </div>
 
-        <MudButton Color="Color.Primary" Variant="Variant.Filled" FullWidth @onclick="LoginUser">
+        <MudButton Color="Color.Primary" Variant="Variant.Filled" FullWidth="true" Class="mt-3" @onclick="LoginUser">
             Login
         </MudButton>
 
         <MudTypography Align="Center" Class="mt-2">
             Don't have an account? <MudNavLink Href="/signup" Color="Color.Primary">Sign up here</MudNavLink>
         </MudTypography>
+
+        @if (alertMessage != null)
+        {
+            <MudAlert Severity="alertSeverity" Class="mt-2">@alertMessage</MudAlert>
+        }
     </MudPaper>
 </MudContainer>
 
 @code {
     private string email = "";
     private string password = "";
+    
+    private bool isPasswordVisible = false;
+    private InputType PasswordInputType => isPasswordVisible ? InputType.Text : InputType.Password;
+    private string PasswordIcon => isPasswordVisible ? Icons.Material.Filled.Visibility : Icons.Material.Filled.VisibilityOff;
+
+    private string? alertMessage = null;
+    private Severity alertSeverity;
+
+    private void TogglePasswordVisibility()
+    {
+        isPasswordVisible = !isPasswordVisible;
+    }
 
     private async Task LoginUser()
     {
-        User newUser = await db.GetUserByEmail(email);
-
-        if (newUser != null)
+        try
         {
-            bool success = newUser.Password == password;
-            if (success)
+            User? newUser = await db.GetUserByEmail(email);
+
+            if (newUser != null)
             {
-                UserState.SetUser(newUser);
-                NavigationManager.NavigateTo("/Check");
+                bool success = newUser.Password == password;
+                if (success)
+                {
+                    UserState.SetUser(newUser);
+                    NavigationManager.NavigateTo("/Check");
+
+                    alertMessage = "Login successful!";
+                    alertSeverity = Severity.Success;
+                }
+                else
+                {
+                    alertMessage = "Incorrect password.";
+                    alertSeverity = Severity.Error;
+                }
             }
             else
             {
-                // Handle incorrect password
-                throw new Exception("Incorrect password");
+                alertMessage = "User not found.";
+                alertSeverity = Severity.Warning;
             }
         }
-        else
+        catch (Exception ex)
         {
-            // Handle user not found
-            throw new Exception("User not found");
+            alertMessage = "An error occurred: " + ex.Message;
+            alertSeverity = Severity.Error;
         }
     }
 }

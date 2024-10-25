@@ -6,7 +6,6 @@
 @using LiveWeather.Singletons
 @inject UserStateManager User
 
-
 <MudThemeProvider />
 <MudPopoverProvider />
 <MudDialogProvider />
@@ -14,15 +13,15 @@
 
 <MudLayout>
     <MudAppBar Color="Color.Primary" Fixed="false">
-        <!-- Remove the three-line menu icon and add the project name button to the top-left corner -->
-        <MudButton Class="mud-button-text" Style="text-transform:none; color:#FFFFFF; font-size: 24px;" Edge="Edge.Start" OnClick="@NavigateToHome">
+        <!-- Project name button (LiveWeather) to the top-left corner with click event -->
+        <MudButton Class="mud-button-text" Style="text-transform:none; color:#FFFFFF; font-size: 24px;" Edge="Edge.Start" OnClick="@NavigateToWelcome">
             LiveWeather
         </MudButton>
 
         <MudSpacer />
 
-        <!-- Centered Navigation Menu -->
-        @if (User.IsLoggedIn())
+        <!-- Centered Navigation Menu only if logged in and NavMenu is enabled -->
+        @if (User.IsLoggedIn() && showNavMenu)
         {
             <MudGrid Justify="Justify.Center">
                 <MudItem>
@@ -38,7 +37,7 @@
     </MudAppBar>
 
     <MudDrawer @bind-Open="@drawerOpen" Elevation="1" Color="Color.Primary" @onopen="@OnDrawerOpen" @onclose="@OnDrawerClose">
-        @if (isAuthenticated)
+        @if (isAuthenticated && showNavMenu)
         {
             <NavMenu />
         }
@@ -58,27 +57,28 @@
 @code {
     private bool drawerOpen = false;
     private bool isAuthenticated;
+    private bool showNavMenu = true; // Control variable for NavMenu visibility
 
     protected override async Task OnInitializedAsync()
     {
         var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
         isAuthenticated = authState.User.Identity != null && authState.User.Identity.IsAuthenticated;
+
+        // Make sure the nav menu is shown if authenticated
+        if (isAuthenticated)
+        {
+            showNavMenu = true;
+        }
     }
 
     private void ToggleDrawer()
     {
-        drawerOpen = !drawerOpen; // Toggle the drawer open state
+        drawerOpen = !drawerOpen;
     }
 
-    private void OnDrawerOpen()
-    {
-        // Additional logic can be added here if needed when the drawer opens
-    }
+    private void OnDrawerOpen() { }
 
-    private void OnDrawerClose()
-    {
-        // Additional logic can be added here if needed when the drawer closes
-    }
+    private void OnDrawerClose() { }
 
     private void NavigateToLogin()
     {
@@ -95,9 +95,10 @@
         NavigationManager.NavigateTo("/logout");
     }
 
-    // New method to navigate to Home (Check Weather page)
-    private void NavigateToHome()
+    private void NavigateToWelcome()
     {
+        // Navigate to welcome page and hide NavMenu, but ensure it reappears after logging in
+        showNavMenu = false;
         NavigationManager.NavigateTo("/welcome");
     }
 }
