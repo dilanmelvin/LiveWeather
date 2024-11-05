@@ -1,12 +1,13 @@
 ﻿@page "/login"
 @rendermode InteractiveServer
-
+@using LiveWeather.Services
 @using LiveWeather.DatabaseController
 @inject NavigationManager NavigationManager
 @inject DatabaseController db
 @using LiveWeather.Models
 @using LiveWeather.Singletons
 @inject UserStateManager UserState
+@inject IAuthService supabase
 
 <MudContainer MaxWidth="MaxWidth.Small" Class="mt-5">
     <MudPaper Elevation="4" Class="p-4">
@@ -67,37 +68,40 @@
 
     private async Task LoginUser()
     {
-        try
-        {
-            User? newUser = await db.GetUserByEmail(email);
+        await supabase.SignIn(email, password);
+        NavigationManager.NavigateTo("/check");
+        // try
+        // {
+        //     User? newUser = await db.GetUserByEmail(email);
 
-            if (newUser != null)
-            {
-                bool success = newUser.Password == password;
-                if (success)
-                {
-                    UserState.SetUser(newUser);
-                    NavigationManager.NavigateTo("/Check");
+        //     if (newUser != null)
+        //     {
+        //         bool success = newUser.Password == password;
+        //         if (success)
+        //         {
+        //             UserState.SetUser(newUser);
+        //             NavigationManager.NavigateTo("/Check");
 
-                    alertMessage = "Login successful!";
-                    alertSeverity = Severity.Success;
-                }
-                else
-                {
-                    alertMessage = "Incorrect password.";
-                    alertSeverity = Severity.Error;
-                }
-            }
-            else
-            {
-                alertMessage = "User not found.";
-                alertSeverity = Severity.Warning;
-            }
-        }
-        catch (Exception ex)
-        {
-            alertMessage = "An error occurred: " + ex.Message;
-            alertSeverity = Severity.Error;
-        }
+        //             alertMessage = "Login successful!";
+        //             alertSeverity = Severity.Success;
+        //         }
+        //         else
+        //         {
+        //             alertMessage = "Incorrect password.";
+        //             alertSeverity = Severity.Error;
+        //         }
+        //     }
+        //     else
+        //     {
+        //         alertMessage = "User not found.";
+        //         alertSeverity = Severity.Warning;
+        //     }
+        // }
+        // catch (Exception ex)
+        // {
+        //     alertMessage = "An error occurred: " + ex.Message;
+        //     alertSeverity = Severity.Error;
+        // }
     }
 }
+    

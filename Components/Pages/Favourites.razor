@@ -1,10 +1,10 @@
 ﻿@page "/Favourites"
 @rendermode InteractiveServer
-
+@using LiveWeather.Services
 @using LiveWeather.Singletons
 @inject UserStateManager userState
 @using MongoDB.Bson
-
+@inject IAuthService supabase
 @using LiveWeather.Models
 @using LiveWeather.DatabaseController
 @inject DatabaseController weatherController
@@ -26,7 +26,7 @@
         <MudTd DataLabel="City">@context.City</MudTd>
         <MudTd DataLabel="Country">@context?.Country</MudTd>
         <MudTd DataLabel="Favourite">
-            <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Favorite" Color="Color.Error" OnClick="@((e)=> RemoveFavourite(context?.City, userState.User.Id))">Remove Favourite</MudButton>       
+            <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Favorite" Color="Color.Error" OnClick="@((e)=> RemoveFavourite(context?.City,supabase.GetUser().Email))">Remove Favourite</MudButton>       
         </MudTd>
         <MudTd DataLabel="Favourite">
             <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Cloud" Color="Color.Primary" OnClick="@((e)=> ViewWeather(context?.City))">View Weather</MudButton>
@@ -48,14 +48,14 @@
         }
         
         userState.OnChange += StateChange;
-        favourites = weatherController.GetFavourites(userState.User.Id).Result;
+        favourites = weatherController.GetFavourites(supabase.GetUser().Email).Result;
     }
 
-    public void RemoveFavourite(string cityName, ObjectId userId)
+    public void RemoveFavourite(string cityName, String userId)
     {
         Favourite favToRemove = weatherController.GetFavourite(cityName, userId).Result;
-        weatherController.RemoveFavourite(userState.User.Id, favToRemove);
-        favourites = weatherController.GetFavourites(userState.User.Id).Result;
+        weatherController.RemoveFavourite(supabase.GetUser().Email, favToRemove);
+        favourites = weatherController.GetFavourites(supabase.GetUser().Email).Result;
     }
 
     public void ViewWeather(string city)

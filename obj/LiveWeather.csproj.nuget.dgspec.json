@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\wisework(off)\\liveweather\\LiveWeather.csproj": {}
+    "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj": {}
   },
   "projects": {
-    "D:\\wisework(off)\\liveweather\\LiveWeather.csproj": {
+    "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\wisework(off)\\liveweather\\LiveWeather.csproj",
+        "projectUniqueName": "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj",
         "projectName": "LiveWeather",
-        "projectPath": "D:\\wisework(off)\\liveweather\\LiveWeather.csproj",
+        "projectPath": "D:\\wisework(off)\\LiveWeather\\LiveWeather.csproj",
         "packagesPath": "C:\\Users\\dilan\\.nuget\\packages\\",
-        "outputPath": "D:\\wisework(off)\\liveweather\\obj\\",
+        "outputPath": "D:\\wisework(off)\\LiveWeather\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -61,6 +61,10 @@
             "MudBlazor": {
               "target": "Package",
               "version": "[7.13.0, )"
+            },
+            "Supabase": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [

@@ -1,11 +1,11 @@
 ﻿@page "/Check"
 @page "/Check/{cityName}"
 @rendermode InteractiveServer
-
+@using LiveWeather.Services
 @using System.Text.Json
 @using System.Text.Json.Serialization
 @inject IHttpClientFactory ClientFactory
-
+@inject IAuthService supabase
 @using MongoDB.Driver
 @using LiveWeather.Models
 @using LiveWeather.DatabaseController
@@ -30,7 +30,7 @@
     {
     <MudText Class="my-2 text-center" Typo="Typo.h5">@forecasts?.Location?.Name, @forecasts?.Location?.Country</MudText>
 
-    @if (userState.IsLoggedIn())
+    @if (supabase.IsAuthenticated())
     {
     if (isFavorite)
     {
@@ -108,7 +108,7 @@ using var responseStream = await response.Content.ReadAsStreamAsync();
 forecasts = await JsonSerializer.DeserializeAsync<WeatherForecast>(responseStream);
 if (userState.IsLoggedIn())
 {
-Favourite fav = weatherController.GetFavourite(forecasts?.Location?.Name, userState.User.Id).Result;
+Favourite fav = weatherController.GetFavourite(forecasts?.Location?.Name,supabase.GetUser().Email).Result;
 isFavorite = fav != null;
 }
 }
@@ -125,7 +125,7 @@ Favourite favourite = new Favourite()
 City = forecasts?.Location?.Name,
 Country = forecasts?.Location?.Country,
 };
-weatherController.AddToFavourite(favourite, userState.User.Id);
+        weatherController.AddToFavourite(favourite, supabase.GetUser().Email);
 isFavorite = true;
 }
 
@@ -136,8 +136,8 @@ Favourite fav = new()
 City = forecasts?.Location?.Name,
 Country = forecasts?.Location?.Country,
 };
-Favourite favToRemove = weatherController.GetFavourite(forecasts?.Location?.Name, userState.User.Id).Result;
-weatherController.RemoveFavourite(userState.User.Id, favToRemove);
+        Favourite favToRemove = weatherController.GetFavourite(forecasts?.Location?.Name, supabase.GetUser().Email).Result;
+        weatherController.RemoveFavourite(supabase.GetUser().Email, favToRemove);
 isFavorite = false;
 }
 

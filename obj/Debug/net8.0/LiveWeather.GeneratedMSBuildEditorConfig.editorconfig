@@ -12,55 +12,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LiveWeather
 build_property.RootNamespace = LiveWeather
-build_property.ProjectDir = D:\wisework(off)\liveweather\
+build_property.ProjectDir = D:\wisework(off)\LiveWeather\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\wisework(off)\liveweather
+build_property.MSBuildProjectDirectory = D:\wisework(off)\LiveWeather
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/wisework(off)/liveweather/Components/App.razor]
+[D:/wisework(off)/LiveWeather/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/Error.razor]
+[D:/wisework(off)/LiveWeather/Components/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/Layout/MainLayout.razor]
+[D:/wisework(off)/LiveWeather/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/Layout/NavMenu.razor]
+[D:/wisework(off)/LiveWeather/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/Pages/Favourites.razor]
+[D:/wisework(off)/LiveWeather/Components/Pages/Favourites.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGYXZvdXJpdGVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/Pages/Home.razor]
+[D:/wisework(off)/LiveWeather/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/Pages/Login.razor]
+[D:/wisework(off)/LiveWeather/Components/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/Pages/Signup.razor]
+[D:/wisework(off)/LiveWeather/Components/Pages/Signup.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaWdudXAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/Pages/Welcome.razor]
+[D:/wisework(off)/LiveWeather/Components/Pages/Welcome.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWxjb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/Routes.razor]
+[D:/wisework(off)/LiveWeather/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wisework(off)/liveweather/Components/_Imports.razor]
+[D:/wisework(off)/LiveWeather/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

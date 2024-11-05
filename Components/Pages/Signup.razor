@@ -1,12 +1,13 @@
 ﻿@page "/signup"
 @rendermode InteractiveServer
-
+@using LiveWeather.Services
 @using LiveWeather.DatabaseController
 @inject NavigationManager NavigationManager
 @inject DatabaseController db
 @using LiveWeather.Models
 @using LiveWeather.Singletons
 @inject UserStateManager UserState
+@inject IAuthService supabase
 
 <MudContainer MaxWidth="MaxWidth.Small" Class="mt-5">
     <MudPaper Elevation="4" Class="p-4">
@@ -63,15 +64,9 @@
         User user = new User(email, password, []);
 
         User newUser = await db.CreateAccount(user);
-
-        if (newUser != null)
-        {
-            UserState.SetUser(newUser);
+        await supabase.SignUp(email, password);
             NavigationManager.NavigateTo("/check");
-        }
-        else
-        {
-            // Handle signup failure (e.g., show an error message)
-        }
+
+
     }
 }

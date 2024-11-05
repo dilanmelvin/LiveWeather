@@ -6,9 +6,17 @@ using LiveWeather.DatabaseController;
 using LiveWeather.Singletons;
 using MudBlazor.Services;
 using Microsoft.AspNetCore.Components.Authorization;
+using Supabase;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var supabaseUrl = "https://ppxzcuaxiedaojbyhgud.supabase.co";
+var supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBweHpjdWF4aWVkYW9qYnloZ3VkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzAxNzc1OTAsImV4cCI6MjA0NTc1MzU5MH0.UbsUXQ30OBvh5bytRdbQWWRrVlr7mpCneQq8z64snOw";
+
+var options = new SupabaseOptions { AutoConnectRealtime = true };
+var supabaseClient = new Supabase.Client(supabaseUrl, supabaseKey, options);
+builder.Services.AddSingleton(supabaseClient);
+builder.Services.AddScoped<IAuthService, SupabaseAuthService>();
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();

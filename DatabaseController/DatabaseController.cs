@@ -42,27 +42,27 @@ namespace LiveWeather.DatabaseController
             return db.GetCollection<Favourite>("favourites");
         }
 
-        public Task<Favourite> AddToFavourite(Favourite favourite, ObjectId userId)
+        public Task<Favourite> AddToFavourite(Favourite favourite, String userId)
         {
-            GetUserCollection().FindOneAndUpdate(user => user.Id == userId, Builders<User>.Update.Push(user => user.favourites, favourite));
+            GetUserCollection().FindOneAndUpdate(user => user.Email == userId, Builders<User>.Update.Push(user => user.favourites, favourite));
             return Task.FromResult(favourite);
         }
 
-        public Task<List<Favourite>> GetFavourites(ObjectId userId)
+        public Task<List<Favourite>> GetFavourites(String userId)
         {
-            List<Favourite> favourites = GetUserCollection().Find<User>(user => user.Id == userId).FirstOrDefault().favourites;
+            List<Favourite> favourites = GetUserCollection().Find<User>(user => user.Email == userId).FirstOrDefault().favourites;
             return Task.FromResult(favourites);
         }
 
-        public Task<Favourite> GetFavourite(string cityName, ObjectId userId)
+        public Task<Favourite> GetFavourite(string cityName, String userId)
         {
-            List<Favourite> favourites = GetUserCollection().Find(user => user.Id == userId).FirstOrDefault().favourites;
+            List<Favourite> favourites = GetUserCollection().Find(user => user.Email == userId).FirstOrDefault().favourites;
             return Task.FromResult(favourites.Find(fav => fav.City == cityName));
         }
 
-        public Task<Favourite> RemoveFavourite(ObjectId userId, Favourite favourite)
+        public Task<Favourite> RemoveFavourite(String userId, Favourite favourite)
         {
-            GetUserCollection().FindOneAndUpdate(user => user.Id == userId, Builders<User>.Update.Pull(user => user.favourites, favourite));
+            GetUserCollection().FindOneAndUpdate(user => user.Email == userId, Builders<User>.Update.Pull(user => user.favourites, favourite));
             return Task.FromResult(favourite);
         }
 
